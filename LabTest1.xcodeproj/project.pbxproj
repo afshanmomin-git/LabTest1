@@ -15,6 +15,8 @@
 		0090F1F427B6FD600019FBAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0090F1F227B6FD600019FBAC /* LaunchScreen.storyboard */; };
 		0090F1FF27B6FD600019FBAC /* LabTest1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090F1FE27B6FD600019FBAC /* LabTest1Tests.swift */; };
 		0090F20A27B6FD600019FBAC /* LabTest1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090F20927B6FD600019FBAC /* LabTest1UITests.swift */; };
+		0090F21C27B700250019FBAC /* george-brown-college-vector-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0090F21B27B700250019FBAC /* george-brown-college-vector-logo.svg */; };
+		0090F22127B7008B0019FBAC /* george-brown-college-vector-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090F22027B7008A0019FBAC /* george-brown-college-vector-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0090F20527B6FD600019FBAC /* LabTest1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabTest1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0090F20927B6FD600019FBAC /* LabTest1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTest1UITests.swift; sourceTree = "<group>"; };
 		0090F20B27B6FD600019FBAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0090F21B27B700250019FBAC /* george-brown-college-vector-logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "george-brown-college-vector-logo.svg"; sourceTree = "<group>"; };
+		0090F22027B7008A0019FBAC /* george-brown-college-vector-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "george-brown-college-vector-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		0090F1E627B6FD5F0019FBAC /* LabTest1 */ = {
 			isa = PBXGroup;
 			children = (
+				0090F21A27B7000E0019FBAC /* Logo */,
 				0090F1E727B6FD5F0019FBAC /* AppDelegate.swift */,
 				0090F1E927B6FD5F0019FBAC /* SceneDelegate.swift */,
 				0090F1EB27B6FD5F0019FBAC /* ViewController.swift */,
@@ -126,6 +131,15 @@
 				0090F20B27B6FD600019FBAC /* Info.plist */,
 			);
 			path = LabTest1UITests;
+			sourceTree = "<group>";
+		};
+		0090F21A27B7000E0019FBAC /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				0090F22027B7008A0019FBAC /* george-brown-college-vector-logo.png */,
+				0090F21B27B700250019FBAC /* george-brown-college-vector-logo.svg */,
+			);
+			path = Logo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,8 @@
 			files = (
 				0090F1F427B6FD600019FBAC /* LaunchScreen.storyboard in Resources */,
 				0090F1F127B6FD600019FBAC /* Assets.xcassets in Resources */,
+				0090F22127B7008B0019FBAC /* george-brown-college-vector-logo.png in Resources */,
+				0090F21C27B700250019FBAC /* george-brown-college-vector-logo.svg in Resources */,
 				0090F1EF27B6FD5F0019FBAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
