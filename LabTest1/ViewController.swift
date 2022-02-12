@@ -17,29 +17,45 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    func randomInt(max:Int) -> Int
-    {
-        let rand: Int = Int(arc4random())
-        return(rand % max)+1
+        
     }
     
-    func randomNum() ->[Int]
-    {
-        let max: Int = 65
+//    ********* METHOD 1 *************
+//
+//    func randomInt(max:Int) -> Int
+//    {
+//        let rand: Int = Int(arc4random())
+//        return(rand % max)+1
+//    }
+//
+//    func randomNum() ->[Int]
+//    {
+//        let max: Int = 65
+//        var array : [Int] = [];
+//        for _ in 1...6 {
+//            var random = randomInt(max: max)
+//            if array.contains(random) {
+//                random = random+1
+//            }
+//            array.append(random)
+//        }
+//        return array
+//    }
+    
+//  ********* METHOD 2 (NO REPETITION) *************
+    
+    func randomNum ()->[Int]{
         var array : [Int] = [];
-        for _ in 1...6 {
-            var random = randomInt(max: max)
-            if array.contains(random) {
-                random = random+1
-            }
-            array.append(random)
+        var randomArray : [Int] = [];
+
+        for index in 1...65{
+            array.append(index)
+            randomArray = array.shuffled()
         }
-        return array
+        return randomArray
     }
 
+    // When Draw Button is pressed
     @IBAction func Draw(_ sender: UIButton)
     {
         let res :[Int] = randomNum()
@@ -50,6 +66,8 @@ class ViewController: UIViewController {
         N5.text = String(res[4])
         N6.text = String(res[5])
     }
+    
+    // When clear button is pressed
     @IBAction func clear(_ sender: UIButton)
     {
         N1.text = String("-")
